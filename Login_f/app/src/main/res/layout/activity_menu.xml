@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boton_fondo"
+    tools:context=".menu">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="594dp"
+        android:layout_height="118dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="mapa"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.448"
+        app:srcCompat="@drawable/mapa" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="221dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="hoteles"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/hotel" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="230dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="comida"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/hambur" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="238dp"
+        android:layout_height="291dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="taxi"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:srcCompat="@drawable/taxi" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="719dp"
+        android:layout_height="239dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="231dp"
+        android:layout_height="291dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="guia"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/guias" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
